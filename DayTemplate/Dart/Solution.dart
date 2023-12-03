@@ -5,7 +5,7 @@ import '../../Utils/DartUtils.dart';
 void main(){
   bool runP1 = true;
   bool runP2 = false;
-  String solutionP1, solutionP2 = "";
+  String solutionP1 = "", solutionP2 = "";
 
   Stopwatch stopwatch = new Stopwatch()..start();
   var input = parseInput(Utils.readToString("../input.txt"));
@@ -22,14 +22,14 @@ void main(){
   print('Ran in ${stopwatch.elapsedMilliseconds * 1/1000} seconds');
 }
 
-Object parseInput(String input){
-  return input;
+List<String> parseInput(String input){
+  return [];
 }
 
-String solvePart1(Object input){
+String solvePart1(List<String> input){
   return input.toString();
 }
 
-String solvePart2(Object input) {
+String solvePart2(List<String> input) {
   return "";
 }

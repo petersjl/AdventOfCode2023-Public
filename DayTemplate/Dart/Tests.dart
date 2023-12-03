@@ -5,15 +5,15 @@ import '../../Utils/DartUtils.dart';
 import 'Solution.dart';
 
 void main(){
-  late Object input;
+  late List<String> input;
 
   setUp(() {
     input = parseInput(Utils.readToString('../testinput.txt'));
   });
 
-  test("Check parse input works correclty", () {
-    expect(input, "Solution1");
-  });
+  // test("Check parse input works correclty", () {
+  //   expect(input, "Solution1");
+  // });
 
   group("Check sample input passes for part", () {
     test("1", () {
