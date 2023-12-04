@@ -35,12 +35,16 @@ extension StringExtras on String {
   List<String> splitNewLine() {
     return this.split('\r\n');
   }
+
+  List<String> splitWhitespace(){
+    return this.split(new RegExp('\\s+'));
+  }
 }
 
 extension GenericListExtras on List {
-  List<T> listMap<T>(T fun(T element)) {
-    List<T> list = [];
-    for (T e in this) {
+  List<To> listMap<From, To>(To fun(From element)) {
+    List<To> list = [];
+    for (From e in this) {
       list.add(fun(e));
     }
     return list;
